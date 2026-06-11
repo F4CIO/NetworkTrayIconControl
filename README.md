@@ -1,5 +1,6 @@
 # NetworkTrayIconControl
 Quickly switch and control your network adapters from Windows tray icon with this WPF application.
+
 ![NetworkTrayIconControl](https://github.com/F4CIO/NetworkTrayIconControl/blob/main/CraftSynth.NetworkTrayIconControl.png)
 
 Official page on my blog: http://www.f4cio.com/networktrayiconcontrol
