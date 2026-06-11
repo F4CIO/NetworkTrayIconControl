@@ -15,3 +15,4 @@ Official page on my blog: http://www.f4cio.com/networktrayiconcontrol
 - Windows OS (tested on Windows 11 but should work on Windows 7 and 10)
 - .Net Framework 8 (if you don't have it already installed go to here
 - 3Mb of disk space
+- Optional: for internet connectivity check to work url from .ini must be reachable
