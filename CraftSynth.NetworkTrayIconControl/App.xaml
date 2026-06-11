@@ -1,0 +1,16 @@
+﻿<Application x:Class="CraftSynth.NetworkTrayIconControl.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CraftSynth.NetworkTrayIconControl"
+             xmlns:tb="http://www.hardcodet.net/taskbar"
+             ShutdownMode="OnExplicitShutdown">
+    <Application.Resources>
+        <!-- The default theme style binds these via RelativeSource FindAncestor ItemsControl,
+             which fails for items in the tray ContextMenu and floods the debug output with
+             "System.Windows.Data Error: 4" messages. Set them explicitly to suppress that. -->
+        <Style TargetType="MenuItem" BasedOn="{StaticResource {x:Type MenuItem}}">
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+    </Application.Resources>
+</Application>

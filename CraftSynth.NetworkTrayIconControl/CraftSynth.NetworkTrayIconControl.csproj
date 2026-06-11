@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <UseWPF>true</UseWPF>
+        <AssemblyName>CraftSynth.NetworkTrayIconControl</AssemblyName>
+        <RootNamespace>CraftSynth.NetworkTrayIconControl</RootNamespace>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.1" />
+        <PackageReference Include="System.Management" Version="8.0.0" />
+        <PackageReference Include="TaskScheduler" Version="2.12.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Resource Include="Resources\network-icon.ico" />
+        <Resource Include="Resources\Icons\*.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="CraftSynth.NetworkTrayIconControl.ini">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+</Project>
